@@ -85,23 +85,6 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                             ),
                           ),
                         ),
-                        // SizedBox(width: 12),
-                        // Expanded(
-                        //   child: Container(
-                        //     padding: EdgeInsets.all(12),
-                        //     decoration: BoxDecoration(
-                        //       color: Colors.white24,
-                        //       borderRadius: BorderRadius.circular(12),
-                        //     ),
-                        //     child: Column(
-                        //       children: [
-                        //         Text("Present Today", style: TextStyle(color: Colors.white70)),
-                        //         SizedBox(height: 6),
-                        //         Text("24", style: TextStyle(color: Colors.white, fontSize: 16)),
-                        //       ],
-                        //     ),
-                        //   ),
-                        // ),
                       ],
                     )
                   ],
@@ -157,10 +140,15 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    CircleAvatar(
-                                      backgroundImage: AssetImage('assets/profile.png'),
-                                      radius: 20,
-                                    ),
+                                   CircleAvatar(
+  radius: 20,
+  backgroundColor: Colors.blueAccent,
+  child: Icon(
+    Icons.class_,           // You can change this to any other icon
+    color: Colors.white,
+    size: 20,
+  ),
+),
                                     SizedBox(height: 8),
                                     Text("$className - $section",
                                         style: TextStyle(fontWeight: FontWeight.bold)),

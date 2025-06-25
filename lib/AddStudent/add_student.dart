@@ -24,7 +24,7 @@ class _AddStudentPageState extends State<AddStudentPage> {
     final provider = Provider.of<StudentProvider>(context);
 
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      // backgroundColor: Colors.blueAccent,
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         title: Text("Add New Student", style: TextStyle(color: Colors.white)),
